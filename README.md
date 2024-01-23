@@ -1,4 +1,6 @@
-## Problem Statement:
+### Overview
+
+The New-Wheels Data Transformation project aimed to address the challenges faced by the New-Wheels app, focusing on sales descent, reputation hit, and a drop in new customers. The objective was to provide actionable insights for informed decision-making and identify avenues for business enhancement.
 
 ### Objective:
 - Provide actionable insights for informed decision-making.
@@ -14,16 +16,6 @@
 
 ![Forbes College Image](assets/Forbes_College_Image_2019.png)
 <span style="font-size: 8pt;">*Picture reference: [forbes-releases-annual-ranking-of-americas-top-colleges](https://imageio.forbes.com/specials-images/imageserve/5d55764795808800097ce87e/Top-Colleges/960x0.png?format=png&width=1440)*</span>
-
-### Data Input:
-
-The input data includes information related to city, country, customer, product, shipper, order, etc.
-
-# New-Wheels Data Transformation Project
-
-## Overview
-
-The New-Wheels Data Transformation project aimed to address the challenges faced by the New-Wheels app, focusing on sales descent, reputation hit, and a drop in new customers. The objective was to provide actionable insights for informed decision-making and identify avenues for business enhancement.
 
 ## Project Insights
 
@@ -57,6 +49,8 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
    - Chevrolet has the highest total customer count (83), indicating a strong market presence.
    - Ford, Toyota, Pontiac, and Dodge follow closely.
    - Competitive landscape observed between Toyota, Pontiac, and Dodge.
+
+<!-- Section: Code Snippet -->
 ## Code Snippet: Top 5 Vehicle Makers by Total Customers
 
 ```sql
@@ -67,6 +61,8 @@ GROUP BY PRODUCT_T.VEHICLE_MAKER
 ORDER BY TOTAL_CUSTOMERS DESC
 LIMIT 5;
 
+<!-- Section: Code Snippet -->
+
 6. **Most Preferred Vehicle Make in Each State**
    - Preferences vary across states, e.g., Alabama prefers Dodge, Alaska prefers Chevrolet, Florida prefers Toyota.
    - Some states have ties in customer count for different vehicle makes.
@@ -74,9 +70,12 @@ LIMIT 5;
 7. **Trend of Purchases by Quarter**
    - Gradual decline in purchases over four quarters, suggesting potential market factors.
    - Strong start in Q1 with high purchases; lowest in Q4.
-     ## Code Snippet: Quarter-on-Quarter Revenue Change
 
-```sql
+<!-- Section: Code Snippet -->
+
+## Code Snippet: Quarter-on-Quarter Revenue Change
+
+'''sql
 WITH RevenueByQuarter AS (
     SELECT
         quarter_number,
@@ -100,7 +99,7 @@ FROM
 
 ## Code Snippet: Quarterly Revenue and Order Count
 
-```sql
+'''sql
 SELECT quarter_number, SUM(vehicle_price) AS Revenue, COUNT(order_id) AS Orders
 FROM order_t
 GROUP BY quarter_number
