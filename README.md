@@ -15,7 +15,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 - Customer-centric: App captures valuable after-sales feedback, prioritizing satisfaction.
 
 ![New Wheels Image](assets/New_Wheels.png)
-<span style="font-size: 8pt;">*Picture reference: [forbes-releases-annual-ranking-of-americas-top-colleges](https://imageio.forbes.com/specials-images/imageserve/5d55764795808800097ce87e/Top-Colleges/960x0.png?format=png&width=1440)*</span>
+<span style="font-size: 8pt;">*Picture reference: [Project Internal]*</span>
 
 ## Project Insights
 
@@ -35,11 +35,15 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
    - District of Columbia has a relatively high customer count (35).
    - States like Vermont, Maine, and North Dakota have low customer distribution, indicating potential areas for market expansion.
    - Ohio, Washington, and Illinois have significant customer bases, suggesting opportunities for business expansion.
+   - 
+![Q1](assets/Q1.png)
+<span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 
 3. **Average Customer Rating – By Quarter**
    - Average rating exhibits a consistent decline over the four quarters, indicating potential issues with customer satisfaction or product/service quality.
    - The most substantial decline is observed between the first quarter (3.55) and the fourth quarter (2.40).
-
+![Q3](assets/Q3.png)
+<span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 4. **Trend of Customer Satisfaction**
    - Noticeable shift in customer sentiment, with a significant increase in 'Very Bad' and 'Bad' responses.
    - Quarter 4 shows a considerable increase in 'Very Bad' responses (30.65%), indicating a decline in customer satisfaction.
@@ -49,7 +53,8 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
    - Chevrolet has the highest total customer count (83), indicating a strong market presence.
    - Ford, Toyota, Pontiac, and Dodge follow closely.
    - Competitive landscape observed between Toyota, Pontiac, and Dodge.
-
+![Q5](assets/Q5.png)
+<span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 ##### Code Snippet: Top 5 Vehicle Makers by Total Customers
 
 ```sql
@@ -109,7 +114,8 @@ ORDER BY quarter_number;
 10. **Average Discount Offered by Credit Card Type**
     - Notable range in discount percentages across different credit card types.
     - Top three credit card types with the highest discount rates: 'laser' (64.38%), 'mastercard' (62.95%), 'maestro' (62.42%).
-
+![Q10](assets/Q10.png)
+<span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 11. **Time Taken to Ship Orders by Quarter**
     - Average shipment time consistently increases from 57.17 days in Q1 to 174.10 days in Q4.
     - Q1 demonstrates a relatively shorter average shipment time, while Q4 shows the longest time.
