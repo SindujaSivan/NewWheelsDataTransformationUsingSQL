@@ -14,7 +14,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 - End-to-end Experience: New-Wheels app—from listing to doorstep delivery—ensures a seamless process.
 - Customer-centric: App captures valuable after-sales feedback, prioritizing satisfaction.
 
-![Forbes College Image](assets/Forbes_College_Image_2019.png)
+![New Wheels Image](assets/New_Wheels.png)
 <span style="font-size: 8pt;">*Picture reference: [forbes-releases-annual-ranking-of-americas-top-colleges](https://imageio.forbes.com/specials-images/imageserve/5d55764795808800097ce87e/Top-Colleges/960x0.png?format=png&width=1440)*</span>
 
 ## Project Insights
@@ -50,8 +50,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
    - Ford, Toyota, Pontiac, and Dodge follow closely.
    - Competitive landscape observed between Toyota, Pontiac, and Dodge.
 
-<!-- Section: Code Snippet -->
-## Code Snippet: Top 5 Vehicle Makers by Total Customers
+##### Code Snippet: Top 5 Vehicle Makers by Total Customers
 
 ```sql
 SELECT PRODUCT_T.VEHICLE_MAKER, COUNT(ORDER_T.CUSTOMER_ID) AS TOTAL_CUSTOMERS
@@ -60,9 +59,7 @@ WHERE ORDER_T.PRODUCT_ID = PRODUCT_T.PRODUCT_ID
 GROUP BY PRODUCT_T.VEHICLE_MAKER
 ORDER BY TOTAL_CUSTOMERS DESC
 LIMIT 5;
-
-<!-- Section: Code Snippet -->
-
+```
 6. **Most Preferred Vehicle Make in Each State**
    - Preferences vary across states, e.g., Alabama prefers Dodge, Alaska prefers Chevrolet, Florida prefers Toyota.
    - Some states have ties in customer count for different vehicle makes.
@@ -71,11 +68,9 @@ LIMIT 5;
    - Gradual decline in purchases over four quarters, suggesting potential market factors.
    - Strong start in Q1 with high purchases; lowest in Q4.
 
-<!-- Section: Code Snippet -->
+##### Code Snippet: Quarter-on-Quarter Revenue Change
 
-## Code Snippet: Quarter-on-Quarter Revenue Change
-
-'''sql
+```sql
 WITH RevenueByQuarter AS (
     SELECT
         quarter_number,
@@ -93,17 +88,19 @@ SELECT
 FROM
     RevenueByQuarter;
 
+```
 
 8. **Quarter on Quarter % Change in Revenue**
    - Consistent decrease in total revenue, with the highest drop from Q3 to Q4.
 
-## Code Snippet: Quarterly Revenue and Order Count
+##### Code Snippet: Quarterly Revenue and Order Count
 
-'''sql
+```sql
 SELECT quarter_number, SUM(vehicle_price) AS Revenue, COUNT(order_id) AS Orders
 FROM order_t
 GROUP BY quarter_number
 ORDER BY quarter_number;
+```
 
 9. **Trend of Revenue and Orders by Quarter**
    - High revenue and order count in Q1; continuous decrease in Q3 and Q4.
