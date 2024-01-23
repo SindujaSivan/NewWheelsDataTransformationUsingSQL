@@ -19,7 +19,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 
 ## Project Insights
 
-1. **Financial Overview**
+**1. Financial Overview**
    - Total Revenue: $83.12M over four quarters
    - Total Orders: 1000
    - Total Customers: 994
@@ -29,7 +29,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
    - Average Days to Ship: 97.96
    - % Good Feedback: 44.10%
 
-2. **Customer Distribution Across States**
+**2. Customer Distribution Across States**
    - California and Texas have the highest customer distribution (97 each).
    - Florida has 86 customers, indicating a robust market presence.
    - District of Columbia has a relatively high customer count (35).
@@ -39,19 +39,19 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 ![Q1](assets/Q1.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 
-3. **Average Customer Rating – By Quarter**
+**3. Average Customer Rating – By Quarter**
    - Average rating exhibits a consistent decline over the four quarters, indicating potential issues with customer satisfaction or product/service quality.
    - The most substantial decline is observed between the first quarter (3.55) and the fourth quarter (2.40).
      
 ![Q3](assets/Q3.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 
-4. **Trend of Customer Satisfaction**
+**4. Trend of Customer Satisfaction**
    - Noticeable shift in customer sentiment, with a significant increase in 'Very Bad' and 'Bad' responses.
    - Quarter 4 shows a considerable increase in 'Very Bad' responses (30.65%), indicating a decline in customer satisfaction.
    - Decrease in responses in 'Okay' and 'Good' categories, emphasizing the need for comprehensive analysis.
 
-5. **Top Vehicle Makers Preferred by Customers**
+**5. Top Vehicle Makers Preferred by Customers**
    - Chevrolet has the highest total customer count (83), indicating a strong market presence.
    - Ford, Toyota, Pontiac, and Dodge follow closely.
    - Competitive landscape observed between Toyota, Pontiac, and Dodge.
@@ -69,11 +69,11 @@ LIMIT 5;
 ![Q5](assets/Q5.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 
-6. **Most Preferred Vehicle Make in Each State**
+**6. Most Preferred Vehicle Make in Each State**
    - Preferences vary across states, e.g., Alabama prefers Dodge, Alaska prefers Chevrolet, Florida prefers Toyota.
    - Some states have ties in customer count for different vehicle makes.
 
-7. **Trend of Purchases by Quarter**
+**7. Trend of Purchases by Quarter**
    - Gradual decline in purchases over four quarters, suggesting potential market factors.
    - Strong start in Q1 with high purchases; lowest in Q4.
 
@@ -98,8 +98,7 @@ FROM
     RevenueByQuarter;
 
 ```
-
-8. **Quarter on Quarter % Change in Revenue**
+**8. Quarter on Quarter % Change in Revenue**
    - Consistent decrease in total revenue, with the highest drop from Q3 to Q4.
 
 ##### Code Snippet: Quarterly Revenue and Order Count
@@ -110,19 +109,18 @@ FROM order_t
 GROUP BY quarter_number
 ORDER BY quarter_number;
 ```
-
-9. **Trend of Revenue and Orders by Quarter**
+**9. Trend of Revenue and Orders by Quarter**
    - High revenue and order count in Q1; continuous decrease in Q3 and Q4.
    - Lowest revenue and order count in Q4, indicating potential challenges.
 
-10. **Average Discount Offered by Credit Card Type**
+**10. Average Discount Offered by Credit Card Type**
     - Notable range in discount percentages across different credit card types.
     - Top three credit card types with the highest discount rates: 'laser' (64.38%), 'mastercard' (62.95%), 'maestro' (62.42%).
       
 ![Q10](assets/Q10.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Microsoft Excel Report]*</span>
 
-11. **Time Taken to Ship Orders by Quarter**
+**11. Time Taken to Ship Orders by Quarter**
     - Average shipment time consistently increases from 57.17 days in Q1 to 174.10 days in Q4.
     - Q1 demonstrates a relatively shorter average shipment time, while Q4 shows the longest time.
 
