@@ -14,7 +14,7 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 - End-to-end Experience: New-Wheels app—from listing to doorstep delivery—ensures a seamless process.
 - Customer-centric: App captures valuable after-sales feedback, prioritizing satisfaction.
 
-![New Wheels Image](assets/New_Wheels.png)
+![New Wheels](assets/New_Wheels.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Internal]*</span>
 
 ## Project Insights
