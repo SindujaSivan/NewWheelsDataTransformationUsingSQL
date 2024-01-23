@@ -1,6 +1,6 @@
 ### Overview
 
-The New-Wheels Data Transformation project aimed to address the challenges faced by the New-Wheels app, focusing on sales descent, reputation hit, and a drop in new customers. The objective was to provide actionable insights for informed decision-making and identify avenues for business enhancement.
+The New-Wheels Data Transformation project aimed to address the challenges faced by the New-Wheels app, focusing on sales descent, reputation hit, and a drop in new customers. 
 
 ### Objective:
 - Provide actionable insights for informed decision-making.
@@ -13,6 +13,10 @@ The New-Wheels Data Transformation project aimed to address the challenges faced
 - After-sales Assurance: Concerns about resale vendor service addressed by New-Wheels app.
 - End-to-end Experience: New-Wheels app—from listing to doorstep delivery—ensures a seamless process.
 - Customer-centric: App captures valuable after-sales feedback, prioritizing satisfaction.
+
+### Data Input:
+
+The input data includes information related to city, country, customer, product, shipper, order, etc.
 
 ![New Wheels](assets/New_Wheels.png)
 <span style="font-size: 8pt;">*Picture reference: [Project Internal]*</span>
@@ -124,5 +128,14 @@ ORDER BY quarter_number;
     - Average shipment time consistently increases from 57.17 days in Q1 to 174.10 days in Q4.
     - Q1 demonstrates a relatively shorter average shipment time, while Q4 shows the longest time.
 
-## Next Steps
-Based on these conclusions, the project team recommends further analysis and targeted actions to address specific challenges highlighted in the findings.
+## Recommendations
+- Implement targeted marketing campaigns in states with lower customer distribution, focusing on unique selling propositions.
+- Conduct thorough analysis of customer feedback, address identified issues promptly, and implement strategies to enhance overall customer satisfaction.
+- Implement strategies to enhance overall customer satisfaction, based on feedback analysis.
+- Investigate reasons behind declining purchases, adapt marketing strategies, and consider promotional campaigns to stimulate demand.
+- Align discount rates with customer preferences, negotiate favorable terms with credit card companies, and consider targeted promotions.
+
+  Above are few recommendations, where this requires further discussion with stakeholders to convert them into action items to be taken further.
+
+
+
